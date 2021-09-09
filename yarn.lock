@@ -6514,9 +6514,9 @@ ts-pnp@^1.1.6:
   version "1.2.0"
   resolved "https://registry.npmjs.org/ts-pnp/-/ts-pnp-1.2.0.tgz#a500ad084b0798f1c3071af391e65912c86bca92"
 
-tsdav@^1.0.6:
-  version "1.0.6"
-  resolved "https://registry.yarnpkg.com/tsdav/-/tsdav-1.0.6.tgz#65c22fc77d6516db234c1288ff9c9fed6730fef5"
+tsdav@^1.1.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/tsdav/-/tsdav-1.1.0.tgz#48fe17df07f852ff8dfddf71fae2396e79ed6735"
   dependencies:
     base-64 "^1.0.0"
     cross-fetch "^3.1.4"
