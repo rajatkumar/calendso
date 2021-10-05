@@ -1189,9 +1189,10 @@
   version "2.30.1-2.b8c35d44de987a9691890b3ddf3e2e7effb9bf20"
   resolved "https://registry.npmjs.org/@prisma/engines-version/-/engines-version-2.30.1-2.b8c35d44de987a9691890b3ddf3e2e7effb9bf20.tgz"
 
-"@prisma/engines@2.30.1-2.b8c35d44de987a9691890b3ddf3e2e7effb9bf20":
-  version "2.30.1-2.b8c35d44de987a9691890b3ddf3e2e7effb9bf20"
-  resolved "https://registry.npmjs.org/@prisma/engines/-/engines-2.30.1-2.b8c35d44de987a9691890b3ddf3e2e7effb9bf20.tgz"
+"@prisma/engines@3.1.0-24.c22652b7e418506fab23052d569b85d3aec4883f":
+  version "3.1.0-24.c22652b7e418506fab23052d569b85d3aec4883f"
+  resolved "https://registry.yarnpkg.com/@prisma/engines/-/engines-3.1.0-24.c22652b7e418506fab23052d569b85d3aec4883f.tgz#7b45708e6a42523dc9bc2214e5c62781f608dc3a"
+  integrity sha512-6NEp0VlLho3hVtIvj2P4h0e19AYqQSXtFGts8gSIXDnV+l5pRFZaDMfGo2RiLMR0Kfrs8c3ZYxYX0sWmVL0tWw==
 
 "@radix-ui/number@0.1.0":
   version "0.1.0"
@@ -6358,11 +6359,12 @@ pretty-hrtime@^1.0.3:
   version "1.0.3"
   resolved "https://registry.npmjs.org/pretty-hrtime/-/pretty-hrtime-1.0.3.tgz"
 
-prisma@^2.30.2:
-  version "2.30.3"
-  resolved "https://registry.npmjs.org/prisma/-/prisma-2.30.3.tgz"
+prisma@^3.1.1:
+  version "3.1.1"
+  resolved "https://registry.yarnpkg.com/prisma/-/prisma-3.1.1.tgz#4c13c35dd3a58af9134008c8ed0fdc21a632802c"
+  integrity sha512-+eZtWIL6hnOKUOvqq9WLBzSw2d/EbTmOx1Td1LI8/0XE40ctXMLG2N1p6NK5/+yivGaoNJ9PDpPsPL9lO4nJrQ==
   dependencies:
-    "@prisma/engines" "2.30.1-2.b8c35d44de987a9691890b3ddf3e2e7effb9bf20"
+    "@prisma/engines" "3.1.0-24.c22652b7e418506fab23052d569b85d3aec4883f"
 
 process-nextick-args@~2.0.0:
   version "2.0.1"
