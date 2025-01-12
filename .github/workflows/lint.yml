@@ -1,21 +1,27 @@
 name: Lint
-on: [push]
+on:
+  workflow_call:
+permissions:
+  actions: write
+  contents: read
 jobs:
   lint:
-    runs-on: ubuntu-latest
+    runs-on: buildjet-4vcpu-ubuntu-2204
 
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v4
+      - uses: ./.github/actions/dangerous-git-checkout
+      - uses: ./.github/actions/yarn-install
+      - name: Run Linting with Reports
+        run: yarn lint:report
+        continue-on-error: true
+
+      - name: Merge lint reports
+        run: jq -s '[.[]]|flatten' lint-results/*.json &> lint-results/eslint_report.json
+
+      - name: Upload ESLint report
+        if: ${{ always() }}
+        uses: actions/upload-artifact@v4
         with:
-          fetch-depth: 0
-
-      - name: Use Node.js 14.x
-        uses: actions/setup-node@v1
-        with:
-          version: 14.x
-
-      - name: Install deps
-        uses: bahmutov/npm-install@v1
-
-      - name: Lint
-        run: yarn lint
+          name: lint-results
+          path: lint-results
