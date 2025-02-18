@@ -2,11 +2,9 @@
 name: Feature request
 about: Suggest a feature or idea
 title: ""
-labels: enhancement
+labels: ["✨ feature", "🚨 needs approval"]
 assignees: ""
 ---
-
-> Please check if your Feature Request has not been already raised in the [Discussions Tab](https://github.com/calendso/calendso/discussions), as we would like to reduce duplicates. If it has been already raised, simply upvote it 🔼.
 
 ### Is your proposal related to a problem?
 
@@ -41,3 +39,20 @@ assignees: ""
 -->
 
 (Write your answer here.)
+
+### Requirement/Document
+
+<!--
+  Is there any type of document that could support that feature?
+-->
+
+(Share it here.)
+
+---
+
+##### House rules
+
+- If this issue has a `🚨 needs approval` label, don't start coding yet. Wait until a core member approves feature request by removing this label, then you can start coding.
+  - For clarity: Non-core member issues automatically get the `🚨 needs approval` label.
+  - Your feature ideas are invaluable to us! However, they undergo review to ensure alignment with the product's direction.
+  - Follow Best Practices lined out in our [Contributor Docs](https://github.com/calcom/cal.com/blob/main/CONTRIBUTING.md)
